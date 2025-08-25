@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <NavbarComponent></NavbarComponent>
-        <router-view class="container"></router-view>
-     <FooterComponent></FooterComponent>
+    <router-view class="container"></router-view>
+    <FooterComponent></FooterComponent>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
   name: 'App',
   components: {
     FooterComponent,
-    NavbarComponent
-  }
-}
+    NavbarComponent,
+  },
+};
 </script>

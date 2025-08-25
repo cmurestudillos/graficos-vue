@@ -14,17 +14,17 @@ import ErrorComponent from '../components/shared/error/ErrorComponent.vue';
 Vue.use(VueRouter);
 
 const routes = [
-    {path: '/', redirect: '/linea'},
-    {path: '/linea', component: LineaComponent},
-    {path: '/barra', component: BarraComponent},
-    {path: '/donut', component: DonutComponent},
-    {path: '/radar', component: RadarComponent},
-    {path: '*', component: ErrorComponent }
+  { path: '/', redirect: '/linea' },
+  { path: '/linea', component: LineaComponent },
+  { path: '/barra', component: BarraComponent },
+  { path: '/donut', component: DonutComponent },
+  { path: '/radar', component: RadarComponent },
+  { path: '*', component: ErrorComponent },
 ];
 
 const router = new VueRouter({
-    routes,
-    mode: 'history'
+  routes,
+  mode: 'history',
 });
 
 export default router;

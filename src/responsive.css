@@ -1,23 +1,23 @@
 @media (max-width: 1920px) {
-    #line-chart{
-        max-width: 800;
-        max-height: 600px;
-        margin: 0 auto;
-    }
-    #bar-chart{
-        max-width: 800;
-        max-height: 600px;
-        margin: 0 auto;
-    }
-    #doughnut-chart{
-        max-width: 600px;
-        max-height: 600px;
-        margin: 0 auto;
-        padding-bottom: 10px;
-    }
-    #radar-chart{
-        max-width: 600px;
-        max-height: 600px;
-        margin: 0 auto;
-    }    
+  #line-chart {
+    max-width: 800;
+    max-height: 600px;
+    margin: 0 auto;
+  }
+  #bar-chart {
+    max-width: 800;
+    max-height: 600px;
+    margin: 0 auto;
+  }
+  #doughnut-chart {
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  #radar-chart {
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+  }
 }

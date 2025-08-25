@@ -1,47 +1,46 @@
-#titulo{
-    margin: 1rem!important;
-    font-weight: 300;
-    font-size: 1.75rem;
-    line-height: 1.2;
+#titulo {
+  margin: 1rem !important;
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 1.2;
 }
 
-.bg-custom{
-    background-image: linear-gradient(15deg, #09a330 0%, #a0d080 100%);
+.bg-custom {
+  background-image: linear-gradient(15deg, #09a330 0%, #a0d080 100%);
 }
 
 .btn {
-    flex: 1 1 auto;
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    border: 1px solid #09a330 !important;
-    margin: 0 auto;
+  flex: 1 1 auto;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  border: 1px solid #09a330 !important;
+  margin: 0 auto;
 }
 
 .btn-4 {
-    background-image: linear-gradient(to right, #a0d080 0%, #c9fbc2 51%, #09a330 100%);
+  background-image: linear-gradient(to right, #a0d080 0%, #c9fbc2 51%, #09a330 100%);
 }
 
 .btn:hover {
-    background-position: right center;
+  background-position: right center;
 }
 
-.item a{
-    color: #444;
-    margin-right: 10px;
+.item a {
+  color: #444;
+  margin-right: 10px;
 }
 
 .item a:hover {
-    text-decoration: none !important;
-}
-  
-.active {
-    color: white !important;
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
+.active {
+  color: white !important;
+  text-decoration: none !important;
+}

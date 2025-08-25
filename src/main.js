@@ -15,7 +15,7 @@ import VueCharts from 'vue-chartjs';
 // ---------------------------------------------------------------//
 // Configuracion para test/produccion                             //
 // ---------------------------------------------------------------//
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 // ---------------------------------------------------------------//
 // BootstrapVue                                                   //
 // ---------------------------------------------------------------//
@@ -28,4 +28,4 @@ Vue.use(VueCharts);
 new Vue({
   router,
   render: h => h(App, Style, Responsive, GoogleFonts),
-}).$mount('#app')
+}).$mount('#app');
