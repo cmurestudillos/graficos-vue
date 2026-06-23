@@ -1,28 +1,40 @@
 <template>
-  <b-navbar toggleable="lg" type="dark" class="bg-custom">
-    <b-navbar-brand>
-      <img src="../../../assets/img/logo.png" alt="Graficos" title="Graficos" />
-    </b-navbar-brand>
-
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-item class="item"><router-link to="/linea" active-class="active">Lineas</router-link></b-nav-item>
-        <b-nav-item class="item"><router-link to="/barra" active-class="active">Barras</router-link></b-nav-item>
-        <b-nav-item class="item"><router-link to="/donut" active-class="active">Donut</router-link></b-nav-item>
-        <b-nav-item class="item"><router-link to="/radar" active-class="active">Radar</router-link></b-nav-item>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+    <div class="container-fluid">
+      <router-link class="navbar-brand" to="/linea">
+        <img src="../../../assets/img/logo.png" alt="Graficos" title="Graficos" />
+      </router-link>
+      <button
+        class="navbar-toggler"
+        type="button"
+        aria-controls="nav-collapse"
+        :aria-expanded="isOpen"
+        aria-label="Toggle navigation"
+        @click="isOpen = !isOpen">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav-collapse" class="collapse navbar-collapse" :class="{ show: isOpen }">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <router-link class="nav-link" to="/linea" active-class="active">Lineas</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/barra" active-class="active">Barras</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/donut" active-class="active">Donut</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/radar" active-class="active">Radar</router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </template>
 
-<script>
-import { BNavbar } from 'bootstrap-vue';
-export default {
-  name: 'NavbarComponent',
-  components: {
-    BNavbar,
-  },
-};
+<script setup>
+import { ref } from 'vue';
+
+const isOpen = ref(false);
 </script>
